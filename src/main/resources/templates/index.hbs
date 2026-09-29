@@ -1,0 +1,22 @@
+<h1>Hello from mustache</h1>
+
+<h2>Liens vers autres pages</h2>
+
+<ul>
+	<li>
+		<a href="/test">Test</a>	
+	</li>
+	<li>
+		<a href="/test/Okay">Avec partie variable</a>		
+	</li>
+	<li>
+		<form action="/items" method="post">
+			<input type="number" name="numero" min="1" placeholder="Numéro" value="1">
+		</form>
+	</li>
+</ul>
+{{#msg}}
+<div>
+Contenu de msg : {{.}}
+</div>
+{{/msg}}
